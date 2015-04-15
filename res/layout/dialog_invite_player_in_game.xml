@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools/"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/activity_home_listview_table_width"
+        android:layout_height="@dimen/dialog_basic_height"
+        android:layout_centerInParent="true" >
+
+        <ListView
+            android:id="@+id/lv_dialog_invite_list_friend"
+            android:layout_width="@dimen/activity_home_listview_table_width"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rg_dialog_invite_table_tab"
+            android:layout_marginTop="-3px"
+            android:background="@drawable/layer_list_home_table_bg"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:paddingBottom="@dimen/activity_home_listview_table_paddingTop"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="@dimen/activity_home_listview_table_paddingBottom"
+            tools:listitem="@layout/item_home_table" >
+        </ListView>
+
+        <RadioGroup
+            android:id="@+id/rg_dialog_invite_table_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listview_table"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/listview_table"
+            android:checkedButton="@+id/dialog_invite_tab_friends"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/dialog_invite_tab_friends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_table_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Bạn bè"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/dialog_invite_tab_free_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_table_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Người rảnh"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

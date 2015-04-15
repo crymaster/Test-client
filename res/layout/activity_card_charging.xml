@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/xeeng_ui_topbar" />
+
+    <LinearLayout
+        android:layout_width="@dimen/xeeng_card_charging_main_layout_width"
+        android:layout_height="@dimen/xeeng_card_charging_main_layout_height"
+        android:layout_marginLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginRight="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:background="@drawable/nap_the_bg"
+        android:padding="16dp" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/xeeng_card_charging_logo_width"
+            android:layout_height="@dimen/xeeng_card_charging_logo_height"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <com.tv.xeeng.gui.customview.CustomEditText
+                    android:id="@+id/edt_serial"
+                    style="@style/Input.Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Serial"
+                    android:imeOptions="flagNoExtractUi|actionNone" >
+
+                    <requestFocus />
+                </com.tv.xeeng.gui.customview.CustomEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <com.tv.xeeng.gui.customview.CustomEditText
+                    android:id="@+id/edt_code"
+                    style="@style/Input.Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Mã thẻ"
+                    android:imeOptions="flagNoExtractUi|actionNext" >
+                </com.tv.xeeng.gui.customview.CustomEditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="@dimen/xeeng_card_charging_logo_width"
+            android:layout_height="@dimen/xeeng_card_charging_logo_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_napthe_bg"
+            android:text="Nạp thẻ"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

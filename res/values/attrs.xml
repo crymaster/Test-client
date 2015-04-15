@@ -1,0 +1,59 @@
+<resources>
+
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    -->
+
+
+    <!-- For MagicTextView -->
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowRadius" format="dimension" />
+        <attr name="innerShadowDx" format="dimension" />
+        <attr name="innerShadowDy" format="dimension" />
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowRadius" format="dimension" />
+        <attr name="outerShadowDx" format="dimension" />
+        <attr name="outerShadowDy" format="dimension" />
+  <!--        <attr name="typeface" format="string" />-->
+        <attr name="foreground" format="reference|color" />
+        <attr name="background" format="reference|color" />
+        <attr name="textStrokeWidth" format="dimension" />
+        <attr name="textStrokeMiter" format="dimension" />
+        <attr name="textStrokeColor" format="color" />
+        <attr name="textStrokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="StrokedTextView">
+        <attr name="strokedTextViewStrokeWidth" format="float" />
+        <attr name="strokedTextViewStrokeColor" format="color" />
+        <attr name="textStroke" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="buttonBarStyle" format="reference" />
+        <attr name="buttonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="InventoryItem">
+        <attr name="name" format="string" />
+        <attr name="count" format="integer" />
+        <attr name="iconSrc" format="reference" />
+        <attr name="isEmpty" format="boolean" />
+        <attr name="isNameVisible" format="boolean" />
+        <attr name="isCountVisible" format="boolean" />
+        <attr name="nameTextSize" format="dimension" />
+        <attr name="countTextSize" format="dimension" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+    <declare-styleable name="FlippableView">
+        <attr name="isShowingFrontView" format="boolean" />
+        <attr name="frontViewId" format="reference" />
+        <attr name="backViewId" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/lv_chat_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layer_list_chat_box_bg"
+            android:dividerHeight="2dp"
+            android:divider="#00000000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            tools:listitem="@layout/fragment_private_chat_messages_item" >
+        </ListView>
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            style="@style/ButtonIcon.Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xeeng_fragment_dialog_chat_chatbox_layout_height"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <ImageButton
+            android:id="@+id/btn_chat"
+            style="@style/ButtonIcon.Emoticon"
+            android:layout_width="@dimen/xeeng_fragment_dialog_chat_btn_emoticon_width"
+            android:layout_height="@dimen/xeeng_fragment_dialog_chat_btn_emoticon_height"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/btn_emoticon" />
+
+        <EditText
+            android:id="@+id/edt_chat_message"
+            style="@style/Input.Register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_toRightOf="@+id/btn_chat"
+            android:background="@drawable/bg_search_bar_text_box"
+            android:hint="Chat text"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_table_list_chat_textSize" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            style="@style/ButtonIcon.Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/btn_chat" />
+    </RelativeLayout>
+
+</LinearLayout>

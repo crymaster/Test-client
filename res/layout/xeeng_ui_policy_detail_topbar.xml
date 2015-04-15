@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_padding"
+    android:layout_marginRight="@dimen/activity_horizontal_padding" >
+
+    <TextView
+        android:layout_width="@dimen/activity_title_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home_bar_bottom"
+        android:gravity="center"
+        android:text="@string/label_instruction"
+        android:textColor="#ffe979"
+        android:textSize="@dimen/xeeng_common_header_textSize"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/xeeng_ui_topbar_btn_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_btn_default"
+        android:contentDescription="@string/description_dialog_closeBtn"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_back" />
+
+</RelativeLayout>

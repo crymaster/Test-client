@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/TextMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="4000" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Button1.Custom.Invite"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_toRightOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Button1.Custom.AddFriend"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toRightOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Button1.Smaller"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button2"
+        android:text="Phòng chơi" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Button1.Square"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button4"
+        android:text="Abc xyz" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextMoney.GoldCoin.Golden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="14.860.400" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Button1.Custom.PlayNow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button4" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Button1.Custom.Message"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button6" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Button1.Small"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:text="Nạp ngay" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Button1.Normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Đồng ý" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Button1.Normal.Negative"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button8"
+        android:text="Hủy" />
+
+    <Button
+        android:id="@+id/Button01"
+        style="@style/Button2.Normal"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button5"
+        android:text="Chọn hình từ máy" />
+
+    <Button
+        android:id="@+id/Button04"
+        style="@style/Button2.Custom.Login"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button03" />
+
+    <Button
+        android:id="@+id/Button05"
+        style="@style/Button1.Custom.Charge"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button3" />
+
+    <Button
+        android:id="@+id/Button07"
+        style="@style/Button2.Custom.Gift"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button04" />
+
+    <Button
+        android:id="@+id/Button03"
+        style="@style/Button2.Smaller"
+        android:layout_alignBaseline="@+id/Button02"
+        android:layout_alignBottom="@+id/Button02"
+        android:layout_toLeftOf="@+id/Button02"
+        android:text="Phòng chơi" />
+
+    <Button
+        android:id="@+id/Button02"
+        style="@style/Button2.TableList"
+        android:layout_below="@+id/Button01"
+        android:layout_toRightOf="@+id/Button04"
+        android:text="Tạo bàn" />
+
+    <Button
+        android:id="@+id/Button09"
+        style="@style/Button2.Custom.Store"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button08" />
+
+    <Button
+        android:id="@+id/Button08"
+        style="@style/Button2.Custom.XeengCoin"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button07" />
+
+    <Button
+        android:id="@+id/Button06"
+        style="@style/ButtonIcon.Chat"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/Button11"
+        style="@style/ButtonIcon.Delete"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/Button10" />
+
+    <Button
+        android:id="@+id/Button10"
+        style="@style/ButtonIcon.Close"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/Button06" />
+
+    <Button
+        android:id="@+id/Button12"
+        style="@style/ButtonIcon.Emoticon"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/Button11" />
+
+</RelativeLayout>

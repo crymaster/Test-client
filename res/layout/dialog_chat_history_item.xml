@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_dialog_chat_history_item_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="leok31789"
+        android:textColor="@color/organe"
+        android:textSize="@dimen/tv_dialog_history_item_player_text_size" />
+
+    <TextView
+        android:id="@+id/tv_dialog_setting_game_num_player_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=":"
+        android:textColor="@color/red"
+        android:textSize="@dimen/tv_dialog_history_item_player_text_size" />
+
+    <TextView
+        android:id="@+id/tv_dialog_chat_history_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:text="bieng choi la say, tien het ngay, nap chay tay"
+        android:textSize="@dimen/tv_dialog_history_item_player_text_size" />
+
+</LinearLayout>

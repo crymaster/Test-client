@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    tools:context=".TableListActivity" >
+
+    <include
+        android:id="@+id/layoutTopBar"
+        layout="@layout/xeeng_ui_topbar" >
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/layout_controls"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/layoutTopBar"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:paddingRight="@dimen/xeeng_ui_topbar_horizontal_padding" >
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="@dimen/xeeng_table_list_edt_search_width"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_search_bar_text_box"
+            android:drawableRight="@drawable/icon_search"
+            android:hint="Nhập mã số bàn chơi"
+            android:imeOptions="flagNoExtractUi"
+            android:lines="1"
+            android:paddingLeft="12dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_table_list_search_textSize" />
+
+        <Button
+            android:id="@+id/btn_create_table"
+            style="@style/Button2.TableList"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/btn_play_now"
+            android:text="Tạo bàn" />
+
+        <Button
+            android:id="@+id/btn_play_now"
+            style="@style/Button1.TableList"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Chơi ngay" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_table_list"
+        android:layout_width="@dimen/xeeng_table_list_center_width"
+        android:layout_height="@dimen/xeeng_table_list_center_height"
+        android:layout_below="@+id/layout_controls"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginRight="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:background="@drawable/layer_list_room_table_bg"
+        android:clipChildren="false" >
+
+        <RelativeLayout
+            android:id="@+id/layout_table_list_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:id="@+id/layoutText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xeeng_table_list_header_height"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvHeaderTableNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="125"
+                    android:gravity="center"
+                    android:text="@string/label_tableNumber"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/xeeng_list_header_textSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/table_seperator" />
+
+                <TextView
+                    android:id="@+id/txtTableNameLable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="430"
+                    android:gravity="center"
+                    android:text="@string/label_TableName"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/xeeng_list_header_textSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/table_seperator" />
+
+                <TextView
+                    android:id="@+id/txtTableValueLable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="235"
+                    android:gravity="center"
+                    android:text="@string/label_TableValue"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/xeeng_list_header_textSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/table_seperator" />
+
+                <TextView
+                    android:id="@+id/txtTablePlayerLable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="135"
+                    android:gravity="center"
+                    android:text="@string/label_TablePlayer"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/xeeng_list_header_textSize" />
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutText"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center" >
+
+                <ListView
+                    android:id="@+id/listTables"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/yellow"
+                    android:clipChildren="true"
+                    android:divider="@drawable/room_table_seperate2"
+                    tools:listitem="@layout/activity_table_list_item" >
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_chat"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_above="@+id/layout_bottombar"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginRight="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:background="@drawable/bottom_bar_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_chat"
+            style="@style/ButtonIcon.Chat"
+            android:layout_marginLeft="1dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_chat_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="5dp"
+                android:text="Loading..."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/xeeng_table_list_chat_textSize" />
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/xeeng_ui_table_list_bottombar" >
+    </include>
+
+</RelativeLayout>

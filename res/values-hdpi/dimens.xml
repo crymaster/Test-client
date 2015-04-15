@@ -1,0 +1,168 @@
+<resources>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	
+	
+	
+	<!-- dialog_chat.xml -->
+	<dimen name="et_dialog_chat_message_margin_horizontal">10dp</dimen>
+	<dimen name="et_dialog_chat_message_margin_vertical">5dp</dimen>
+	<dimen name="gv_dialog_chat_template_height">150dp</dimen>
+	<dimen name="gv_dialog_chat_template_vertical_spacing">10dp</dimen>
+	<dimen name="gv_dialog_chat_template_padding_top">5dp</dimen>
+	<dimen name="dialog_chat_seperator_line_height">40dp</dimen>
+	<!-- dialog_chat_message_item.xml -->
+	<dimen name="dialog_chat_message_item_width">110dp</dimen>
+	<dimen name="dialog_chat_message_item_height">30dp</dimen>
+	<dimen name="tv_dialog_chat_message_item_msg_text_size">14sp</dimen>
+	<!-- dialog_chat_emoticon_item.xml -->
+	<dimen name="iv_dialog_chat_emoticon_item_size">40dp</dimen>
+	<!-- dialog_chat_history_item.xml -->
+	<dimen name="tv_dialog_history_item_player_text_size">13sp</dimen>
+
+	<!-- activity_login.xml & activity_splash.xml -->
+	<dimen name="xeeng_splash_width">223dp</dimen>
+	<dimen name="xeeng_splash_height">255dp</dimen>
+
+	<!-- dialog_player_info_game.xml -->
+	<dimen name="dialog_player_info_game_line_height">3dp</dimen>
+	<dimen name="dialog_app_info_width">320dp</dimen>
+	<dimen name="dialog_app_info_height">240dp</dimen>
+	<dimen name="dialog_notify_width">315dp</dimen>
+	<dimen name="dialog_notify_height">212dp</dimen>
+	<dimen name="dialog_setting_width">320dp</dimen>
+	<dimen name="dialog_setting_height">240dp</dimen>
+	<dimen name="edt_username_width">200dp</dimen>
+	<dimen name="font_text_login">15sp</dimen>
+	
+	<!-- Player info dialog -->
+	<dimen name="dialog_player_info_width">360dp</dimen>
+	<dimen name="dialog_player_info_height">220dp</dimen>
+	
+	<!-- send gift dialog -->
+	<dimen name="dialog_send_gift_seekbar_width">340dp</dimen>
+	<dimen name="dialog_send_gift_seekbar_height">@dimen/wrap_content</dimen>
+	<dimen name="dialog_send_money_gift_width">360dp</dimen>
+	<dimen name="dialog_send_money_gift_height">220dp</dimen>
+	
+	<!-- game rules dialog -->
+	<dimen name="dialog_games_rule_margin_right">80dp</dimen>
+	<dimen name="dialog_games_rule_margin_left">80dp</dimen>
+	<dimen name="rule_game_content_font">16dp</dimen>
+	<dimen name="rule_game_title_font">18dp</dimen>
+	<!-- 03/09/2013 -->
+	<dimen name="viewpager_margin">-435dp</dimen>
+	<dimen name="item_home_screen_width">200dp</dimen>
+	<dimen name="home_screen_grid_item_vertical_spacing">5dp</dimen>
+	<dimen name="home_screen_button_margin">-200px</dimen>
+	<dimen name="home_screen_grid_view_vertical_padding">10dp</dimen>
+	<dimen name="home_screen_player_info_horizontal_padding">4dp</dimen>
+
+	<!-- Common -->
+	<dimen name="activity_title_width">300dp</dimen>
+	<dimen name="xeeng_ui_topbar_height">40dp</dimen>
+	<dimen name="xeeng_ui_topbar_btn_width">40dp</dimen>
+	<dimen name="xeeng_topbar_gap">5dp</dimen>
+	<dimen name="xeeng_bottombar_gap">10dp</dimen>
+	<dimen name="xeeng_bottomtab_gap">5dp</dimen>
+	<dimen name="xeeng_bottomtab_height">32dp</dimen>
+	<dimen name="xeeng_list_item_padding">10dp</dimen>
+	<dimen name="xeeng_list_margin_vertical">15dp</dimen>
+	<dimen name="xeeng_list_margin_horizontal">60dp</dimen>
+	<dimen name="xeeng_list_header_textSize">13sp</dimen>
+	<dimen name="xeeng_list_item_textSize">13sp</dimen>
+	<dimen name="xeeng_btn_textSize">14sp</dimen>
+	<dimen name="xeeng_common_header_textSize">18sp</dimen>
+
+	<!-- Home screen - Tung & Nguyen -->
+	<dimen name="xeeng_profile_avatar_size">30dp</dimen>
+	<dimen name="xeeng_topbar_profile_width">124dp</dimen>
+	<dimen name="xeeng_topbar_deposite_width">83dp</dimen>
+	<dimen name="xeeng_topbar_text_size">12sp</dimen>
+	<dimen name="xeeng_topbar_avatar_marginLeft">5dp</dimen>
+	<dimen name="xeeng_topbar_profile_marginLeft">5dp</dimen>
+	
+
+	<!-- activity_charging_item.xml -->
+	<dimen name="xeeng_item_charging_btnCharging_width">128dp</dimen>
+	<dimen name="xeeng_item_charging_btnCharging_height">38dp</dimen>
+	<dimen name="xeeng_item_charging_text_size">17sp</dimen>
+	<dimen name="xeeng_item_charging_padding">3dp</dimen>
+	
+	<!-- activity_top_player_item.xml -->
+	<dimen name="xeeng_top_player_index_padding">5dp</dimen>
+
+	<!-- xeeng_ui_charing_buttons.xml -->
+	<dimen name="xeeng_charging_button_gap">5dp</dimen>
+	<dimen name="xeeng_charging_method_gap">3dp</dimen>
+
+	<!-- activity_charging.xml -->
+	<dimen name="xeeng_charging_layout_margin_bottom">50dp</dimen>
+	<dimen name="xeeng_charging_layout_margin_top">5dp</dimen>
+
+	<!-- activity_top_player.xml -->
+	<dimen name="xeeng_top_player_header_textSize">12sp</dimen>
+	<dimen name="xeeng_dialog_player_info_bottomtab_gap">20dp</dimen>
+	<dimen name="xeeng_event_details_textSize">14sp</dimen>
+	<dimen name="xeeng_top_player_bottom_bar_height">40dp</dimen>
+
+	<!-- xeeng_ui_login_form.xml & xeeng_ui_login_register_form.xml -->
+	<dimen name="xeeng_login_editText_height">32dp</dimen>
+
+	<!-- xeeng_ui_dialog_player_info_social_buttons -->
+	<dimen name="xeeng_social_button_gap">15dp</dimen>
+
+	<!-- xeeng_ui_dialog_player_info_texts.xml -->
+	<dimen name="xeeng_profile_common_textSize">12sp</dimen>
+	<dimen name="xeeng_profile_username_textSize">16sp</dimen>
+
+	<!-- xeeng_ui_dialog_player_info_social_buttons.xml -->
+	<dimen name="xeeng_player_info_social_btn_width">@dimen/wrap_content</dimen>
+	
+	<!-- Xeeng v2 dimens -->
+	
+	<!-- activity_login.xml -->
+	<!-- activity_login.xml & activity_splash.xml -->
+	<dimen name="xeeng_activity_login_logo_width">@dimen/wrap_content</dimen>
+	<dimen name="xeeng_activity_login_logo_height">@dimen/wrap_content</dimen>
+	<dimen name="activity_login_imv_logo_xeeng_marginLeft">20dp</dimen>
+	<dimen name="activity_login_layout_main_paddingRight">125dp</dimen>
+	<dimen name="activity_login_label_width">70dp</dimen>
+
+	<!-- activity_home.xml -->
+	<dimen name="activity_home_table_tab_top_width">68dp</dimen>
+	<dimen name="activity_home_listview_table_width">225dp</dimen>
+	<dimen name="activity_home_listview_table_paddingTop">6dp</dimen>
+	<dimen name="activity_home_listview_table_paddingBottom">6dp</dimen>
+	<dimen name="home_screen_carousel_width">215dp</dimen>
+	<dimen name="home_screen_carousel_height">120dp</dimen>
+	<dimen name="home_carousel_margin">-160dp</dimen>
+	
+	<!-- item_home_table.xml -->
+	<dimen name="item_home_table_txt_player_name_width">86dp</dimen>
+	
+	<!-- xeeng_ui_home_bottombar.xml -->
+	<dimen name="xeeng_ui_bottombar_layout_profile_width">280dp</dimen>
+	
+	<!-- activity_table_list.xml -->
+	<dimen name="xeeng_table_list_center_width">550dp</dimen>
+	<dimen name="xeeng_table_list_center_height">145dp</dimen>
+	<dimen name="xeeng_table_list_edt_search_width">340dp</dimen>
+	<dimen name="xeeng_table_list_header_height">20dp</dimen>
+	
+	<!-- activity_home.xml & activity_user_info.xml -->
+	<dimen name="tabbed_listview_marginTop">-2px</dimen>
+
+		
+	<!-- fragment_event_details_participate.xml -->
+	<dimen name="xeeng_ui_event_item_count_textSize">14sp</dimen>
+	<item name="xeeng_ui_event_item_scale" format="float" type="fraction">0.6</item>
+	
+	<!-- fragment_user_info_inventory_item.xml -->
+	<dimen name="xeeng_ui_inventory_item_size">100dp</dimen>
+	
+	<!-- fragment_event_details_participate_flip_cards_item.xml -->
+	<dimen name="xeeng_ui_flippable_card_width">51dp</dimen>
+	<dimen name="xeeng_ui_flippable_card_height">82dp</dimen>
+	<dimen name="xeeng_ui_front_card_textSize">8sp</dimen>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <include layout="@layout/xeeng_ui_home_topbar_middle_profile" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/btn_charging"
+            android:layout_width="@dimen/xeeng_topbar_deposite_width"
+            android:layout_height="@dimen/xeeng_ui_topbar_height"
+            android:background="@drawable/selector_btn_default"
+            android:contentDescription="@string/description_bored"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_napxeng" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnAddFriend"
+        android:layout_width="@dimen/xeeng_ui_topbar_btn_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_marginLeft="@dimen/xeeng_topbar_gap"
+        android:background="@drawable/selector_btn_default"
+        android:contentDescription="@string/description_bored"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_addfriend" />
+    
+    <ImageButton
+        android:id="@+id/btnTop"
+        android:layout_width="@dimen/xeeng_ui_topbar_btn_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_marginLeft="@dimen/xeeng_topbar_gap"
+        android:background="@drawable/selector_btn_default"
+        android:contentDescription="@string/description_bored"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_top" />
+
+    <ImageButton
+        android:id="@+id/btn_shopping"
+        android:layout_width="@dimen/xeeng_ui_topbar_btn_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_marginLeft="@dimen/xeeng_topbar_gap"
+        android:background="@drawable/selector_btn_default"
+        android:contentDescription="@string/description_bored"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar_default" />
+
+    <ImageButton
+        android:id="@+id/btnEven"
+        android:layout_width="@dimen/xeeng_ui_topbar_btn_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_marginLeft="@dimen/xeeng_topbar_gap"
+        android:background="@drawable/selector_btn_default"
+        android:contentDescription="@string/description_bored"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_event" />
+
+</LinearLayout>

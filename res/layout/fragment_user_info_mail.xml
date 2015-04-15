@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/xeeng_ui_topbar_vertical_padding"
+    android:layout_marginLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+    android:layout_marginRight="@dimen/xeeng_ui_topbar_horizontal_padding"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/xeeng_ui_topbar_horizontal_padding" >
+
+    <ListView
+        android:id="@+id/lv_mail"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="370"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:listSelector="@android:color/transparent"
+        tools:listitem="@layout/fragment_user_info_mail_item_received" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <TextView
+        android:id="@+id/tv_mail_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="530"
+        android:padding="5dp"
+        android:background="@drawable/bg_popup_bottom" />
+
+</LinearLayout>

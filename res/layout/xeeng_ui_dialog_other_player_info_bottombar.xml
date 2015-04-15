@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:weightSum="3" >
+
+    <Button
+        android:id="@+id/btnGiveCoin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/btn_bg_in_profile_info"
+        android:contentDescription="@string/description_playerInfoView_messageButton"
+        android:enabled="false"
+        android:padding="@dimen/xeeng_btn_padding"
+        android:text="@string/btn_label_giveCoin"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/xeeng_btn_textSize" />
+
+    <Button
+        android:id="@+id/btnMessage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/xeeng_dialog_player_info_bottomtab_gap"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@drawable/btn_bg_in_profile_info"
+        android:contentDescription="@string/description_playerInfoView_addFrendButton"
+        android:enabled="false"
+        android:padding="@dimen/xeeng_btn_padding"
+        android:text="@string/btn_label_message"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/xeeng_btn_textSize" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/xeeng_dialog_player_info_bottomtab_gap"
+        android:layout_weight="1" >
+    </View>
+
+</LinearLayout>

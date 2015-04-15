@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="card_flip_time_full" type="integer">300</item>
+    <item name="card_flip_time_half" type="integer">150</item>
+
+</resources>

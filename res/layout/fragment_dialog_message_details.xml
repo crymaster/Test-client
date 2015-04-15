@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    tools:context=".MessageDetailsDialog" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include
+        android:id="@+id/layoutTopBar"
+        layout="@layout/xeeng_ui_message_topbar" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTopBar"
+        android:layout_marginBottom="@dimen/xeeng_bottomtab_height"
+        android:layout_marginLeft="@dimen/xeeng_list_margin_horizontal"
+        android:layout_marginRight="@dimen/xeeng_list_margin_horizontal"
+        android:layout_marginTop="@dimen/xeeng_list_margin_vertical"
+        android:background="@drawable/bg_popup_bottom" >
+
+        <RelativeLayout
+            android:id="@+id/layoutEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" >
+
+            <TextView
+                android:id="@+id/txtEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:paddingBottom="@dimen/xeeng_list_item_padding"
+                android:paddingTop="@dimen/xeeng_list_item_padding"
+                android:textColor="#ffa127"
+                android:textSize="@dimen/xeeng_list_header_textSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/separated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEventTitle"
+                android:contentDescription="@string/description_bored"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seperate_line" />
+
+            <TextView
+                android:id="@+id/txtEventDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separated"
+                android:background="@null"
+                android:padding="@dimen/xeeng_list_item_padding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/xeeng_list_header_textSize" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

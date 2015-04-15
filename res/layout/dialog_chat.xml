@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_dialog_chat_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_dialog_chat_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="4"
+        android:background="@color/black_overlay"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="none"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true"
+        tools:listitem="@layout/dialog_chat_history_item" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gv_dialog_chat_template"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dialog_chat_seperator_line"
+        android:background="@color/black_overlay"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_dialog_chat_message"
+            style="@style/Input.Register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/et_dialog_chat_message_margin_horizontal"
+            android:layout_marginRight="@dimen/et_dialog_chat_message_margin_horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="8"
+            android:background="@drawable/bg_search_bar_text_box"
+            android:gravity="center_vertical"
+            android:hint="Chat Text"
+            android:imeOptions="flagNoExtractUi|actionSend"
+            android:singleLine="true"
+            android:text="aabcdg"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_chat_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_taoban_bg"
+            android:text="Gửi"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_dialog_chat_template"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="5"
+        android:background="@drawable/chat_bottom_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="@dimen/dialog_chat_message_item_width"
+        android:gravity="center_horizontal"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingTop="15dp"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="5dp"
+        android:visibility="visible"
+        tools:listitem="@layout/dialog_chat_message_item" >
+    </GridView>
+
+</LinearLayout>

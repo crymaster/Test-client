@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CHỌN MỨC CƯỢC"
+        android:textColor="#FDD900"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="XENG"
+            android:textColor="#FFDC00" />
+
+        <RadioGroup
+            android:id="@+id/rg_xeeng_bets"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:background="@drawable/level_choice_bg_slot"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="GOLD"
+            android:textColor="#B4AEAE" />
+
+        <RadioGroup
+            android:id="@+id/rg_gold_bets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:background="@drawable/level_choice_bg_slot"
+            android:checkedButton="@+id/tb_xeeng_bets_4"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_end_roullete"
+            style="@style/Button1.Normal"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:text="Nhận thưởng" />
+
+        <Button
+            android:id="@+id/btn_start_roullete"
+            style="@style/Button1.Normal"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Quay tiếp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_event_details_flip_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SỰ KIỆN LẬT BÀI"
+        android:textColor="#FDD900"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_event_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/gv_event_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="5"
+            tools:listitem="@layout/fragment_event_details_participate_flip_cards_item" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/center_anchor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imv_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/event_evit_05" />
+
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/Button2.Smaller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imv_reward"
+            android:text="Bắt đầu" />
+
+        <Button
+            android:id="@+id/btn_participate_all"
+            style="@style/Button2.Smaller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/center_anchor"
+            android:text="Đổi tất cả"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_event_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btn_start"
+            android:textColor="#827E7F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:text="Bạn cần 10.000 gold/1 lần đổi"
+            android:textColor="#827E7F"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

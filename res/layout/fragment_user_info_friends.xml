@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:background="@drawable/bg_search_bar_text_box"
+        android:drawableRight="@drawable/icon_search"
+        android:hint="Tìm bạn trong danh sách"
+        android:imeOptions="flagNoExtractUi|actionDone"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/xeeng_fragment_user_info_friends_search_textSize" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/table_seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_friends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/xeeng_ui_topbar_horizontal_padding"
+            android:layout_weight="400"
+            android:divider="@null"
+            android:dividerHeight="3dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            tools:listitem="@layout/fragment_user_info_friends_item" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@color/table_seperator" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/xeeng_fragment_user_info_friends_details_width"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/xeeng_ui_topbar_horizontal_padding"
+            android:layout_weight="560" >
+
+            <RelativeLayout
+                android:id="@+id/layout_friend_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xeeng_fragment_user_info_friends_details_height" >
+
+                <include
+                    android:id="@+id/iv_friend_avatar"
+                    android:layout_width="@dimen/xeeng_friend_avatar_width"
+                    android:layout_height="@dimen/xeeng_friend_avatar_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    layout="@layout/xeeng_ui_avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_friend_avatar"
+                    android:layout_alignTop="@+id/iv_friend_avatar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_friend_avatar"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_friend_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/player_info_cell_name"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="This is a player"
+                        android:textColor="@color/green" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_gold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/icon_coin_gold"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Gold: 2000000"
+                            android:textColor="@color/green" />
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Giới tính: Nữ"
+                            android:textColor="@color/green" />
+
+                        <TextView
+                            android:id="@+id/tv_stats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Thắng: 50/ Thua: 60"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_delete_friend"
+                    style="@style/Button1.Custom.DeleteFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/btn_private_chat"
+                    style="@style/Button1.Custom.Message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_private_chat_messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

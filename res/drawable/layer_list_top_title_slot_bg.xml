@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:gravity="left|fill_vertical"
+            android:src="@drawable/top_title_bg_left_slot" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="right|fill_vertical"
+            android:src="@drawable/top_title_bg_right_slot" />
+    </item>
+    <item
+        android:left="13dp"
+        android:right="13dp">
+        <bitmap
+            android:gravity="fill"
+            android:src="@drawable/top_title_bg_center_slot"
+            android:tileMode="repeat" />
+    </item>
+
+</layer-list>

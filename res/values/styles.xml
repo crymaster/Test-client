@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="DialogAnimationFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="DialogFadeAnimStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimationFade</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:textAppearance">@style/TextAppearance.DialogWindowTitle</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.DialogWindowTitle" parent="android:TextAppearance">
+        <item name="android:textColor">#ff33b5e5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Avatar">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/avatar_default</item>
+    </style>
+
+    <style name="EventTab">
+        <item name="android:layout_width">132dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_event_tab_transparent_unselect_bg</item>
+        <item name="android:textColor">@drawable/selector_event_tab_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EventTab.Smaller" parent="EventTab">
+        <item name="android:background">@drawable/selector_event_tab_bg</item>
+        <item name="android:layout_width">99dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EventTab.Smallest" parent="EventTab">
+        <item name="android:background">@drawable/selector_event_tab_bg</item>
+        <item name="android:layout_width">82dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="InventoryItem">
+        <item name="android:layout_width">@dimen/xeeng_ui_inventory_item_size</item>
+        <item name="android:layout_height">@dimen/xeeng_ui_inventory_item_size</item>
+    </style>
+
+    <style name="InventoryItem.Smaller" parent="InventoryItem">
+        <item name="isNameVisible">false</item>
+        <item name="isEmpty">false</item>
+        <item name="scale">@fraction/xeeng_ui_event_item_scale</item>
+    </style>
+
+    <style name="SlotMachineBetRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/selector_slot_machine_bet_text_color</item>
+    </style>
+
+    <style name="VIPLevelTab">
+        <item name="android:background">@drawable/selector_vip_level_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/selector_vip_level_text_color</item>
+    </style>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <com.tv.xeeng.gui.customview.AutoResizingTextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"            
+            android:layout_toLeftOf="@+id/txtGender"
+            android:layout_marginRight="5dp"
+            android:text="@string/default_username"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_profile_username_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/label_gender"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_profile_common_textSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/txtxephanglevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/label_xephang"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_profile_common_textSize"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtExpValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/default_cash_value"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/xeeng_profile_common_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtxephangmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtxephanglevel"
+            android:text="@string/label_xephangtien"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_profile_common_textSize"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtCashValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtExpValue"
+            android:text="@string/default_cash_value"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/xeeng_profile_common_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtxephangthangthua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtxephangmoney"
+            android:text="@string/label_xephangthangthua"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_profile_common_textSize"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

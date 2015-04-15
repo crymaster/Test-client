@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    <!-- Replace placeholder ID with your tracking ID -->
+    <string name="ga_trackingId">UA-53187030-1</string>
+
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    
+    <!-- GUI screens -->
+    <screenName name="com.tv.xeeng.gui.CardChargingActivity">
+        Card Charging Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.ChargingActivity">
+        Charging Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.EventActivity">
+        Event Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.GameSettingsActivity">
+        Game Setting Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.InfoActivity">
+        Information Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.LoginActivity">
+        Login Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.RegisterActivity">
+        Register Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.StoreActivity">
+        Store Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.TableListActivity">
+        Table List Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.UserHomeActivity">
+        Home Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.UserInfoActivity">
+        User Info Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.gui.UserSettingActivity">
+        User Setting Screen
+    </screenName>
+	<!-- Ingame screens -->
+	
+	<screenName name="com.tv.xeeng.ALTPGameActivity">
+        Ingame ALTP Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.BaCayGameActivity">
+        Ingame BaCay Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.BauCuaGameActivity">
+        Ingame BauCua Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.PhomGameActivity">
+        Ingame Phom Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.PikachuGameActivity">
+        Ingame Pikachu Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.TLMNGameActivity">
+        Ingame TLMN Screen
+    </screenName>
+    <screenName name="com.tv.xeeng.XamGameActivity">
+        Ingame Xam Screen
+    </screenName>
+	
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <string name="ga_logLevel">verbose</string>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="@dimen/xeeng_topbar_profile_width"
+        android:layout_height="@dimen/xeeng_ui_topbar_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_btn_default"
+        android:contentDescription="@string/description_bored"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_profile" />
+
+    <ImageView
+        android:id="@+id/imv_avatar"
+        android:layout_width="@dimen/xeeng_profile_avatar_size"
+        android:layout_height="@dimen/xeeng_profile_avatar_size"
+        android:layout_alignLeft="@+id/btnProfile"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/xeeng_topbar_avatar_marginLeft"
+        android:contentDescription="@string/description_bored"
+        android:src="@drawable/icon_user" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/xeeng_topbar_profile_marginLeft"
+        android:layout_toRightOf="@id/imv_avatar"
+        android:layout_alignRight="@+id/btnProfile"
+        android:layout_alignBottom="@+id/btnProfile"
+        android:layout_alignTop="@+id/btnProfile"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/default_username"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_topbar_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGoldValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="@string/default_cash_value"
+            android:textColor="#FFFB00"
+            android:textSize="@dimen/xeeng_topbar_text_size"
+            android:textStyle="bold" />
+
+        <!--
+     	    <TextView
+		        android:id="@+id/txtUsernameHello"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:alpha="0.5"
+		        android:singleLine="true"
+		        android:text="@string/default_usernameHello"
+		        android:textColor="@android:color/white"
+		        android:textSize="@dimen/xeeng_topbar_text_size"
+		        android:textStyle="normal" />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

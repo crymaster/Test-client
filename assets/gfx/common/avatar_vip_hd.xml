@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texture version="1" file="avatar_vip_hd.pvr.ccz" type="pvrccz" width="490" height="490" pixelformat="RGBA_4444" minfilter="linear" magfilter="linear" wrapt="clamp" wraps="clamp" premultiplyalpha="false">
+    <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker -->
+    <!-- $TexturePacker:SmartUpdate:12f514a576755c16cc1a97b4f76bfbe7:8ccff7d52ef0c49c28d715e3ed34238d:1f551a3a9428e392e0ec869c38f55404$ -->
+    <textureregion id="0" src="av_01.png" x="2" y="2" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="1" src="av_02.png" x="170" y="2" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="2" src="av_03.png" x="338" y="2" width="120" height="166" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="3" src="av_04.png" x="2" y="124" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="4" src="av_05.png" x="170" y="124" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="5" src="av_06.png" x="338" y="170" width="120" height="166" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="6" src="av_07.png" x="2" y="246" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="7" src="av_08.png" x="170" y="246" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="8" src="av_09.png" x="2" y="368" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+    <textureregion id="9" src="av_10.png" x="170" y="368" width="120" height="166" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="166"/>
+</texture>

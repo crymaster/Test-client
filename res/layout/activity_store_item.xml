@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:clipChildren="false" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_layout"
+        android:layout_width="@dimen/xeeng_store_item_width"
+        android:layout_height="@dimen/xeeng_store_item_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buy_package_bg"
+        android:paddingLeft="@dimen/xeeng_store_item_horizontal_padding"
+        android:paddingRight="@dimen/xeeng_store_item_horizontal_padding" >
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            style="@style/TextMoney.GoldCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xeeng_store_item_title_height"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="@dimen/xeeng_store_item_title_width"
+            android:text="37.5M" />
+
+        <ImageView
+            android:id="@+id/iv_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/icon_gold_pack5" />
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            style="@style/TextMoney.XeengCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xeeng_store_item_price_height"
+            android:layout_above="@+id/btn_buy_now"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:maxWidth="@dimen/xeeng_store_item_price_width"
+            android:text="100" />
+
+        <Button
+            android:id="@+id/btn_buy_now"
+            style="@style/Button1.Small"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/store_item_btn_buy_now" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rl_item_layout"
+        android:layout_marginRight="-45dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="+10%"
+        android:textStyle="bold"
+        android:textColor="#9B0103"
+        android:background="@drawable/icon_sale" />
+
+</RelativeLayout>

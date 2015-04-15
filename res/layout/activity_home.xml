@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    tools:context=".UserHomeActivity" >
+
+    <include
+        android:id="@+id/layout_topbar"
+        layout="@layout/xeeng_ui_topbar" />
+
+    <include
+        android:id="@+id/layout_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/xeeng_ui_home_bottombar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottombar"
+        android:layout_below="@+id/layout_topbar" >
+
+        <RelativeLayout
+            android:id="@+id/layout_table_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp" >
+
+            <ListView
+                android:id="@+id/listview_table"
+                android:layout_width="@dimen/activity_home_listview_table_width"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_table_tab"
+                android:layout_marginTop="@dimen/tabbed_listview_marginTop"
+                android:background="@drawable/layer_list_home_table_bg"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="2dp"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="@dimen/activity_home_listview_table_paddingTop"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="@dimen/activity_home_listview_table_paddingBottom" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/layout_table_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/listview_table"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/listview_table"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/table_tab_top"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_table_tab"
+                    android:selectAllOnFocus="true"
+                    android:text="@string/home_text_top"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/table_tab_events"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_table_tab"
+                    android:text="@string/home_text_event"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/table_tab_news"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_table_tab"
+                    android:text="@string/home_text_news"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/layout_table_tabs"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_event_banner1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imv_event_banner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/game_type_bg1" />
+
+                    <ImageButton
+                        android:id="@+id/btn_join_event1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imv_event_banner"
+                        android:layout_alignRight="@+id/imv_event_banner"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/btn_join_event1" />
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/rl_event_banner2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imv_event_banner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/game_type_bg2" />
+
+                    <ImageButton
+                        android:id="@+id/btn_join_event2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imv_event_banner2"
+                        android:layout_alignRight="@+id/imv_event_banner2"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/btn_join_event2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+  
+            <ImageButton
+                        android:id="@+id/play_button"
+                        android:layout_width="@dimen/home_screen_carousel_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@null"
+                        android:src="@drawable/icon_tlmn" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

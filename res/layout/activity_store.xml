@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false" >
+
+    <include
+        android:id="@+id/layout_topbar"
+        layout="@layout/xeeng_ui_topbar" />
+
+    <RadioGroup
+        android:id="@+id/rg_store_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clipChildren="false"
+        android:layout_below="@+id/layout_topbar"
+        android:background="@drawable/bottom_bar_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_store_gold"
+            style="@style/EventTab"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:text="Gói gold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_store_item"
+            style="@style/EventTab"
+            android:layout_gravity="center_vertical"
+            android:text="Vật phẩm" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_store_sale"
+            style="@style/EventTab"
+            android:layout_gravity="center_vertical"
+            android:text="Khuyến mại" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:id="@+id/lv_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottombar"
+        android:layout_below="@+id/rg_store_category"
+        android:layout_marginTop="6dp"
+        tools:listitem="@layout/activity_store_item" />
+
+    <include
+        android:id="@+id/layout_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/xeeng_ui_home_bottombar" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:gravity="left"
+            android:src="@drawable/table_tab_select_left" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="right"
+            android:src="@drawable/table_tab_select_right" />
+    </item>
+    <item
+        android:left="3dp"
+        android:right="3dp">
+        <bitmap
+            android:src="@drawable/table_tab_select_center"
+            android:tileMode="repeat" />
+    </item>
+
+</layer-list>

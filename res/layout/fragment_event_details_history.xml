@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/event_details_history_border_color" />
+
+    <LinearLayout
+        android:id="@+id/event_details_history_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Lịch sử nhận quà"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:src="@color/event_details_history_border_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Thời gian"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/event_details_history_border_color" />
+
+    <ListView
+        android:id="@+id/lv_event_details_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="-3dp"
+        tools:listitem="@layout/fragment_event_details_history_item" >
+    </ListView>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="-3dp"
+        android:src="@color/event_details_history_border_color" />
+</LinearLayout>

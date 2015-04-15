@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:gravity="left|fill_vertical"
+            android:src="@drawable/info_table_bg_left" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="right|fill_vertical"
+            android:src="@drawable/info_table_bg_right" />
+    </item>
+    <item
+        android:left="2dp"
+        android:right="2dp">
+        <bitmap
+            android:src="@drawable/info_table_bg_center"
+            android:gravity="fill" />
+    </item>
+
+</layer-list>

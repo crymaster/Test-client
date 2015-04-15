@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texture version="1" file="avatar_vip.pvr.ccz" type="pvrccz" width="250" height="250" pixelformat="RGBA_4444" minfilter="linear" magfilter="linear" wrapt="clamp" wraps="clamp" premultiplyalpha="false">
+    <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker -->
+    <!-- $TexturePacker:SmartUpdate:789d70f1e26740bf0ffd39adb4b1f3db:6d933db03ce33fb45d855e0c66dc39c0:534c6c63502e499bbe20d4d76f0a2a4f$ -->
+    <textureregion id="0" src="av_01.png" x="2" y="2" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="1" src="av_02.png" x="87" y="2" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="2" src="av_03.png" x="172" y="2" width="60" height="83" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="3" src="av_04.png" x="2" y="64" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="4" src="av_05.png" x="87" y="64" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="5" src="av_06.png" x="172" y="87" width="60" height="83" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="6" src="av_07.png" x="2" y="126" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="7" src="av_08.png" x="87" y="126" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="8" src="av_09.png" x="2" y="188" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+    <textureregion id="9" src="av_10.png" x="87" y="188" width="60" height="83" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="83"/>
+</texture>

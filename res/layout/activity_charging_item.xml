@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="9dp"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/xeeng_store_item_width"
+        android:layout_height="@dimen/xeeng_store_item_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buy_package_bg"
+        android:paddingLeft="@dimen/xeeng_store_item_horizontal_padding"
+        android:paddingRight="@dimen/xeeng_store_item_horizontal_padding" >
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xeeng_store_item_title_height"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxWidth="@dimen/xeeng_store_item_title_width"
+            android:singleLine="true"
+            android:text="Thẻ cào"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_store_item_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_value"
+            style="@style/TextMoney.XeengCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xeeng_store_item_title_height"
+            android:layout_below="@+id/tv_item_title"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="@dimen/xeeng_store_item_title_width"
+            android:text="1M" />
+
+        <ImageView
+            android:id="@+id/iv_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/icon_sms_1" />
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xeeng_store_item_price_height"
+            android:layout_above="@+id/btn_buy_now"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:maxWidth="@dimen/xeeng_store_item_price_width"
+            android:singleLine="true"
+            android:text="15000VND"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_store_item_textSize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_buy_now"
+            style="@style/Button1.Small"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/charging_item_btn_buy_now" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="9dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">1.3.2</string>
+    <string name="app_id">471038199656304</string>
+    <string name="app_name">DauTruongIQ</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="tab_login">ĐĂNG NHẬP</string>
+    <string name="tab_register">ĐĂNG KÝ</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="label_user_account">Tài khoản</string>
+    <string name="label_change_avatar">Thay đổi</string>
+    <string name="label_password">Mật khẩu</string>
+    <string name="label_game">Đấu trường IQ</string>
+    <string name="login_acc_remember">Nhớ mật khẩu</string>
+    <string name="reg_acc_hint">Nhập tên tài khoản</string>
+    <string name="reg_pass_hint">Mật khẩu</string>
+    <string name="reg_repass_hint">Nhập lại mật khẩu</string>
+    <string name="reg_agree_policy">Đồng ý\u0020</string>
+    <string name="reg_detail_policy">điều khoản</string>
+    <string name="title_activity_pika_online">PikaOnlineActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="table_header_name">Số thứ tự</string>
+    <string name="table_header_min_cash">Tiền cược tối thiểu</string>
+    <string name="table_header_level">Level</string>
+    <string name="table_header_player">Số người chơi trong bàn</string>
+    <string name="loading">Đang xử lí...</string>
+    <string name="table_header_matrix">Kích thước</string>
+    <string name="pika_table_list_no_table">Chưa có bàn chơi nào</string>
+    <string name="pika_table_list_create_button">Tạo bàn</string>
+    <string name="pika_create_num_player">Số người chơi</string>
+    <string name="pika_create_bet_cash">Tiền cược</string>
+    <string name="pika_create_mode">Kiểu chơi</string>
+    <string name="cancel">Hủy</string>
+    <string name="close">Đóng</string>
+    <string name="ok">Đồng ý</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="settings">Thiết lập</string>
+    <string name="settings_uc">THIẾT LẬP</string>
+    <string name="has_errors">Có lỗi xảy ra</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="sound_bg_music">Nhạc nền</string>
+    <string name="sound_effect">Âm thanh hiệu ứng</string>
+    <string name="viberate">Rung</string>
+    <string name="support_channel">Kênh hỗ trợ:</string>
+    <string name="pika_create_advanture_mode">Phiêu lưu</string>
+    <string name="pika_create_level_mode">Chọn level</string>
+    <string name="label_xephang">Xếp Hạng Level: -----</string>
+    <string name="label_xephangtien">Xếp Hạng Tiền: -----</string>
+    <string name="label_xephangthangthua">Tỉ lệ Thắng/ Thua: -----</string>
+    <string name="label_location">Đang ở: </string>
+    <string name="label_gender">Giới tính:---</string>
+    <string name="btn_label_changePwd">Đổi\n mật khẩu</string>
+    <string name="btn_label_changeInfo">Đổi\n thông tin</string>
+    <string name="btn_label_message">TIN NHẮN</string>
+    <string name="btn_label_addFriend">KẾT BẠN</string>
+    <string name="btn_label_charging">NẠP TIỀN</string>
+    <string name="btn_label_submit">Gửi Gift Code</string>
+    <string name="btn_label_giveCoin">TẶNG XU</string>
+    <string name="tab_label_rewardMoney">Tiền thưởng</string>
+    <string name="tab_label_giftCode">Gift Code</string>
+    <string name="tab_label_charging">Nạp tiền</string>
+    <string name="label_RoomName">TÊN PHÒNG</string>
+    <string name="label_RoomValue">SỐ CƯỢC TỐI THIỂU</string>
+    <string name="label_RoomPlayer">SỐ NGƯỜI ĐANG THAM GIA</string>
+    <string name="label_TableName">TÊN BÀN</string>
+    <string name="label_TableValue">MỨC CƯỢC</string>
+    <string name="label_TablePlayer">SỐ NGƯỜI</string>
+    <string name="tab_label_setting">THIẾT LẬP</string>
+    <string name="tab_label_friend">BẠN BÈ</string>
+    <string name="tab_label_instruction">HƯỚNG DẪN</string>
+    <string name="tab_label_player_free">NGƯỜI RẢNH</string>
+    <string name="tab_label_info">THÔNG TIN</string>
+    <string name="tab_label_message">TIN NHẮN</string>
+    <string name="tab_label_event">SỰ KIỆN</string>
+    <string name="label_giftcode_instruction">Nhập thông tin giftcode để nhận ngay tiền thưởng nhé</string>
+    <string name="label_tlmn">TIẾN LÊN MIỀN NAM</string>
+    <string name="txtPlayerInfoTitle">THÔNG TIN NGƯỜI CHƠI</string>
+    <string name="label_tlmn_short">TLMN</string>
+    <string name="label_pikachu">PIKACHU</string>
+    <string name="label_altp_short">ATLP</string>
+    <string name="label_rules">Quy định</string>
+    <string name="label_sam">SÂM</string>
+    <string name="label_phom">PHỎM</string>
+    <string name="label_pikonline">Pika Online</string>
+    <string name="label_altp">AI LÀ TRIỆU PHÚ</string>
+    <string name="label_bacay">BA CÂY</string>
+    <string name="label_baucua">BẦU CUA</string>
+    <string name="label_minBet"></string>
+    <string name="label_room">Phòng</string>
+    <string name="btn_label_online_short">Online</string>
+    <string name="btn_label_play_now_short">Chơi ngay</string>
+    <string name="btn_label_friends">BẠN BÈ</string>
+    <string name="btn_label_play_now">Chơi ngay</string>
+    <string name="btn_label_amateur">TẬP SỰ</string>
+    <string name="btn_label_richer">ĐẠI GIA</string>
+    <string name="btn_label_vip">VIP</string>
+    <string name="label_submit">Nạp Thẻ</string>
+    <string name="toggleBtn_label_stateOn">Bật</string>
+    <string name="toggleBtn_label_stateOff">Tắt</string>
+    <string name="label_backgroundMusic">Nhạc nền</string>
+    <string name="label_sound_effect">Nhạc nền</string>
+    <string name="label_Music_effect">Âm thanh hiệu ứng</string>
+    <string name="label_automatically_deny_invitation">Tự động từ chối lời mời</string>
+    <string name="label_app_name_version">Xeeng Online v</string>
+    <string name="label_copyright">Copyright ©2014 Tinh Vân Telecom</string>
+    <string name="label_wapsite">Wapsite: m.xeeng.com.vn</string>
+    <string name="label_website">Website: www.xeeng.com.vn</string>
+    <string name="label_fanpage">Fanpage: Xeeng</string>
+    <string name="label_phone">Hotline: 09090909090</string>
+    <string name="label_email">Email: lienhe@xeeng.com.vn</string>
+    <string name="wapsite">http://xeeng.com.vn</string>
+    <string name="fanpage">http://www.facebook.com/xeengonline</string>
+    <string name="phone">09090909090</string>
+    <string name="email">lienhe@xeeng.com.vn</string>
+    <string name="email_subject">Góp ý game Xeeng Android</string>
+    <string name="label_friend_requests_list">Danh sách kết bạn</string>
+    <string name="btn_label_acceptFriend">Kết bạn</string>
+    <string name="btn_label_denyFriend">Từ chối</string>
+    <string name="label_sms">SMS</string>
+    <string name="label_card">Card</string>
+    <string name="label_index">THỨ TỰ</string>
+    <string name="label_charging_type">LOẠI</string>
+    <string name="label_give_value">NẠP</string>
+    <string name="label_get_value">NHẬN ĐƯỢC</string>
+    <string name="label_instruction">HƯỚNG DẪN</string>
+    <string name="error_msg">Có lỗi xảy ra</string>
+    <string name="card_error_msg">Thẻ không hợp lệ</string>
+    <string name="default_welcome">Nhận hàng trăm nghìn GOLD miễn phí tại Fanpage của XEENG Online. Chi tiết tại www.xeengvn.com hoặc www.facebook.com/xeengonline</string>
+    <string name="label_top_richest">Top đại gia</string>
+    <string name="label_top_pro">Top cao thủ</string>
+    <string name="label_top_altp">Top ALTP</string>
+    <string name="label_leader_board_top_richest">BẢNG VÀNG - TOP ĐẠI GIA</string>
+    <string name="label_loader_board_top_player">BẢNG VÀNG - TOP CAO THỦ</string>
+    <string name="label_send_bi">Tặng bi</string>
+    <string name="label_invite">Mời chơi</string>
+    <string name="label_kick">Đá</string>
+    <string name="successful">Thành công</string>
+    <string name="request_sent">Lời mời kết bạn đã được gửi đi</string>
+    <string name="fail">Hai người đã là bạn của nhau rồi!</string>
+    <string name="error">Lỗi</string>
+    <string name="receive_gold">Nhận Gold</string>
+    <string name="receive_gift">Nhận quà</string>
+    <string name="gift_code">Gift Code</string>
+    <string name="default_dialog_title">Thông báo</string>
+    <string name="default_dialog_title_uc">THÔNG BÁO</string>
+    <string name="pending_function">Sắp ra mắt</string>
+    <string name="message_invite_dialog_error">Không thể mời chơi vì người chơi không online!</string>
+    <string name="message_not_enough_money_eror">Bạn không đủ tiền!</string>
+    <string name="select_game">Chọn trò chơi</string>
+    <string name="label_close">Đóng</string>
+    <string name="label_policy">Điều khoản sử dụng</string>
+    <string name="duty_prefix_string">Bạn hoàn thành nhiệm vụ đánh bài dạng </string>
+    <string name="duty_win_x2">Bạn được x2 số tiền khi thắng</string>
+    <string name="duty_be_get"> để được </string>
+    <string name="duty_suffix_string"> số tiền khi thắng</string>
+    <string name="details_charging">CHI TIẾT NẠP TIỀN</string>
+    <string name="cash_value">Số tiền</string>
+    <string name="online">Online</string>
+    <string name="charge">Nạp</string>
+    <string name="charge_sms">NẠP SMS</string>
+    <string name="charge_card">NẠP THẺ</string>
+    <string name="charge_giftcode">GIFT CODE</string>
+    <string name="appsflyer_dev_id">VR8R8h6EARmo6codtpSUC8</string>
+
+    <!-- Edit text hint -->
+    <string name="hint_name">Họ tên</string>
+    <string name="hint_location">Địa chỉ</string>
+    <string name="hint_gender">Giới tính</string>
+    <string name="hint_giftCode">Gift Code</string>
+    <string name="hint_card_serial">Số Serial thẻ</string>
+    <string name="hint_card_number">Mã thẻ</string>
+
+    <!-- Default string -->
+
+    <string name="default_username">Vickey</string>
+    <string name="default_usernameHello">Xin chào</string>
+    <string name="default_cash_value">14.860.400\u0020</string>
+    <string name="default_user_online">ONLINE</string>
+    <string name="default_empty_text">---</string>
+    <string name="default_index_text">THỨ TỰ</string>
+    <string name="default_index_name">NGƯỜI CHƠI</string>
+    <string name="default_description_text">SỰ KIỆN</string>
+    <string name="default_money_value">10k</string>
+    <string name="carrier_prompt">Chọn nhà mạng</string>
+
+    <string-array name="carrier_array">
+        <item>Viettel</item>
+        <item>Mobifone</item>
+        <item>Vinaphone</item>
+    </string-array>
+
+    <!-- Common -->
+    <string name="text_developing">Tính năng đang được phát triển</string>
+    <string name="text_not_enough_player">Bạn vui lòng chờ hoặc hãy mời người khác chơi.</string>
+
+    <!-- xeeng_ui_table_list_bottombar.xml -->
+    <string name="label_btnVipRooms">VIP</string>
+    <string name="label_btnAmateurRooms">Bình dân</string>
+    <string name="label_btnMillionaireRooms">Triệu phú</string>
+    <string name="label_btnRicherRooms">Đại gia</string>
+
+    <!-- xeeng_ui_table_list.xml -->
+    <string name="label_tableNumber">BÀN</string>
+    <string name="domain_name">xeengvn.com</string>
+
+    <!-- activity_info.xml -->
+    <string name="activity_info_title">Thông tin</string>
+    <string name="info_btn_tab_news_label">TIN TỨC</string>
+    <string name="info_btn_tab_event_label">SỰ KIỆN</string>
+    <string name="info_btn_tab_help_label">HƯỚNG DẪN CHUNG</string>
+    <string name="info_help_policy">Quy định</string>
+    <string name="info_help_3cay">Luật chơi Ba cây</string>
+    <string name="info_help_phom">Luật chơi Phỏm(Tá lả)</string>
+    <string name="info_help_tlmn">Luật chơi Tiến lên Miền Nam</string>
+    <string name="info_help_pikachu">Luật chơi Pikachu</string>
+    <string name="info_help_baucua">Luật chơi Bầu cua</string>
+    <string name="info_help_altp">Luật chơi Ai là triệu phú</string>
+
+    <!-- activity_user_info.xml -->
+    <string name="activity_user_info_title">Thông tin cá nhân</string>
+    <string name="user_info_btn_tab_vip_label">VIP</string>
+    <string name="user_info_btn_tab_profile_label">CÁ NHÂN</string>
+    <string name="user_info_btn_tab_friends_label">BẠN BÈ</string>
+    <string name="user_info_btn_tab_inventory_label">HÒM ĐỒ</string>
+
+    <!-- activity_store.xml -->
+    <string name="activity_store_title">Cửa hàng</string>
+
+    <!-- activity_store_item.xml -->
+    <string name="store_item_btn_buy_now">Mua ngay</string>
+
+    <!-- activity_charging_item.xml -->
+    <string name="activity_charging_title">Nạp Xèng</string>
+    <string name="charging_item_btn_buy_now">Nạp ngay</string>
+
+    <!-- activity_charging.xml -->
+    <string name="notice_text">Tỷ lệ quy đổi: 100VNĐ = 1 icon2\n(Áp dụng với thẻ cào)</string>
+
+    <!-- fragment_user_info_profile -->
+    <string name="gender_text">Giới tính: %s</string>
+
+    <!-- activity_card_charging.xml -->
+    <string name="activity_card_charging_title">NẠP XÈNG</string>
+
+    <!-- activity_setting.xml -->
+    <string name="label_email_support">hotro@xeengvn.com</string>
+
+    <!-- fragment_event_details_participate_flip_cards.xml -->
+    <string name="event_title_choose_card">CHỌN QUÂN BÀI ĐỂ LẬT</string>
+    <string name="event_title_begin">CHỌN NÚT BẮT ĐẦU</string>
+
+    <!-- fragment_user_info_vip -->
+    <string name="text_vip_content">Chế độ ưu đãi đặc biệt blah blah blah blah blah blah</string>
+    <string name="text_vip_requirement">Là khách hàng tiêu dùng blah blah blah blah blah blah blah blah</string>
+    <string name="text_vip_reward">Quyền lợi đặc biệt blah blah blah blah blah blah</string>
+    
+    <!-- Content description -->
+    <string name="description_topNavigationBar_background">Top navigation bar background</string>
+    <string name="description_topNavigationBar_RightBackground">Top right navigation bar background</string>
+    <string name="description_topNavigationBar_LeftBackground">Top left navigation bar background</string>
+    <string name="description_topNavigationBar_backButton">Top navigation bar back image button</string>
+    <string name="description_topNavigationBar_settingButton">Top navigation bar setting image button</string>
+    <string name="description_topNavigationBar_helpButton">Top navigation bar help image button</string>
+    <string name="description_topNavigationBar_userInfoIcon">Top navigation bar user info icon</string>
+    <string name="description_topNavigationBar_addFriendIcon">Top navigation bar add friend icon</string>
+    <string name="description_topNavigationBar_messageIcon">Top navigation bar messages icon</string>
+    <string name="description_topNavigationBar_rewardButton">Top navigation bar reward button</string>
+    <string name="description_topNavigationBar_eventButton">Top navigation bar event button</string>
+    <string name="description_topNavigationBar_refreshButton">Top navigation bar refresh button</string>
+    <string name="description_playerInfoView_avatarImgView">Player info pop up view avatar image view</string>
+    <string name="description_playerInfoView_changePwdButton">Player info change password button</string>
+    <string name="description_playerInfoView_changeInfoButton">Player info change user info button</string>
+    <string name="description_playerInfoView_messageButton">Player info view messages button</string>
+    <string name="description_playerInfoView_addFrendButton">Player info pop up view add friend button</string>
+    <string name="description_playerInfoView_chargeButton">Player info pop up view charge button</string>
+    <string name="description_playerInfoVIew_backgroundTextLong">Player info pop up view background line long</string>
+    <string name="description_playerInfoVIew_backgroundTextShort">Player info pop up view background line short</string>
+    <string name="description_playerInfoView_background">Player info pop up background image</string>
+    <string name="description_rewardDialog_background">Reward dialog background image</string>
+    <string name="description_dialog_topBackground">Dialog top bar background</string>
+    <string name="description_dialog_bodyBackground">Dialog body background</string>
+    <string name="descriptiontxtUpgrape">Tinh Nang Dang Phat Trien</string>
+    <string name="description_dialog_closeBtn">Dialog close button</string>
+    <string name="description_rewardDialog_giftCodeImage">Reward dialog giftcode decoration image</string>
+    <string name="description_rewardDialog_smsChargingBtn">Reward dialog sms charging button</string>
+    <string name="description_rewardDialog_cardChargingBtn">Reward dialog card charging button</string>
+    <string name="description_roomListActivity_tabIndicator">Rooms list activity bottom tab indicator</string>
+    <string name="description_roomListCell_icon">Room list cell icon</string>
+    <string name="description_roomListCell_percentOfUserIcon">Room list cell icon demonstrate the percentage of user in the room</string>
+    <string name="description_table_item_cell_chair">Table grid view item chair</string>
+    <string name="description_table_item_cell_card_mark">Table grid view card mark</string>
+    <string name="description_table_item_background">Table grid view item background</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_online_users">OnlineUsersActivity</string>
+    <string name="description_online_status">Online status</string>
+    <string name="description_bored">Avoid warning</string>
+    <string name="title_activity_friend_requests">FriendRequests</string>
+    <string name="title_activity_message_requests">TIN NHẮN</string>
+    <string name="title_activity_charging">ChargingActivity</string>
+    <string name="title_activity_events_list">EventsListActivity</string>
+    <string name="title_activity_top_player">TopPlayerActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="_sdcard_myxml_xml">/sdcard/myxml.xml</string>
+    <string name="login_text_id">ID:</string>
+    <string name="login_text_password">Mật khẩu:</string>
+    <string name="login_text_registry"><html><body><u>Đăng ký</u></body></html></string>
+    <string name="login_text_fogot_password"><html><body><u>Quên/Đổi mật khẩu</u></body></html></string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_text_copyright">Xeeng Online © 2014 TinhvanTelecom</string>
+    <string name="home_text_top">TOP</string>
+    <string name="home_text_event">SỰ KIỆN</string>
+    <string name="home_text_news">TIN TỨC</string>
+    <string name="home_cate_game_bai">GAME BÀI</string>
+    <string name="home_cate_game_dan_gian">GAME DÂN GIAN</string>
+    <string name="hone_cate_game_mini">MINI GAME</string>
+    <string name="number_one">1</string>
+    <string name="title_activity_base_layout_xeeng">BaseLayoutXeengActivity</string>
+    <string name="title_activity_user_settings">UserSettingsActivity</string>
+    <string name="game_action_skip_turn">Bỏ lượt</string>
+    <string name="game_action_arrange_hand">Xếp bài</string>
+    <string name="game_action_play_card">Đánh</string>
+    <string name="game_action_send_card">Gửi bài</string>
+    <string name="game_action_show_phom">Hạ phỏm</string>
+    <string name="game_action_bao_sam">Báo\nSâm</string>
+    <string name="game_action_khong_bao">Không\nBáo</string>
+    <string name="game_action_bao_trang">Báo\nTrắng</string>
+    <string name="game_action_khong_bao_trang">Không\nBáo</string>
+    <string name="unknow">UNKNOW</string>
+
+</resources>

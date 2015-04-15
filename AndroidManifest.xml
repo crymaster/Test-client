@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tv.xeeng"
+    android:installLocation="auto"
+    android:versionCode="224"
+    android:versionName="@string/app_version" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.tv.xeeng.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tv.xeeng.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.tv.xeeng.CustomApplication"
+        android:allowBackup="true"
+        android:label="TLMN"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+        <!-- Used for Google Play Store Campaign Measurement -->
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.tv.xeeng.receivers.InstallReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.tv.xeeng.gui.SplashScreenActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.CardChargingActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysVisible|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.LoginActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.InfoActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.RegisterActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.UserHomeActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.UserSettingsActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.GameSettingsActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.StoreActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.UserInfoActivity"
+            android:noHistory="false"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.ALTPGameActivity"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.BaCayGameActivity"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.SamGameActivity"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.TLMNGameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.PhomGameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.PokerGameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.PikachuGameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.BauCuaGameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.game.MauBinhGameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|screenLayout"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.RoomListActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.TableListActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.OnlineUsersActivity"
+            android:label="@string/title_activity_online_users"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.FriendRequestsActivity"
+            android:label="@string/title_activity_friend_requests"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.MessageOffLine"
+            android:label="@string/title_activity_message_requests"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.SlotMachineActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.ChargingActivity"
+            android:label="@string/title_activity_charging"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tv.xeeng.gui.EventActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <activity android:name="com.appota.payment.SMSPaymentActivity" android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="com.appota.payment.CardPaymentActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:windowSoftInputMode="adjustPan" />
+        
+        
+        
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="CHANNEL"
+            android:value="xeengvn.com" />
+
+        <receiver android:name="com.tv.xeeng.gcm.GcmBroadcastReceiver" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.tv.xeeng" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tv.xeeng.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name="com.tv.xeeng.gcm.GcmIntentService" />
+    </application>
+
+</manifest>

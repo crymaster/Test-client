@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_topbar"
+        layout="@layout/xeeng_ui_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_info_table_headers"
+        android:layout_marginBottom="@dimen/xeeng_ui_topbar_vertical_padding"
+        android:layout_marginLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginRight="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/info_table_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/xeeng_ui_topbar_horizontal_padding" >
+
+        <ListView
+            android:id="@+id/lv_info"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="370"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:listSelector="@android:color/transparent"
+            tools:listitem="@layout/activity_info_item" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+
+        <WebView
+            android:id="@+id/text_event_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="530"
+            android:background="@drawable/bg_popup_bottom" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/layout_info_table_headers"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xeeng_activity_info_button_tabs_height"
+        android:layout_below="@+id/layout_topbar"
+        android:layout_marginLeft="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginRight="@dimen/xeeng_ui_topbar_horizontal_padding"
+        android:layout_marginTop="5dp"
+        android:checkedButton="@+id/btn_tab_news"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_tab_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@drawable/selector_table_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/info_btn_tab_news_label"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_info_table_tab_textSize" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/btn_tab_event"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@drawable/selector_table_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/info_btn_tab_event_label"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_info_table_tab_textSize" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/btn_tab_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@drawable/selector_table_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/info_btn_tab_help_label"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xeeng_info_table_tab_textSize" />
+    </RadioGroup>
+
+</RelativeLayout>

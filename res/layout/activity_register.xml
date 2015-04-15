@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity" >
+
+    <include
+        android:id="@+id/layout_topbar"
+        layout="@layout/xeeng_ui_topbar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/setting_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="9dp" >
+
+        <TableLayout
+            android:id="@+id/layout_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Tên tài khoản" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    style="@style/Input.Register"
+                    android:imeOptions="flagNoExtractUi" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Mật khẩu" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/Input.Register"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nhập lại Mật khẩu" />
+
+                <EditText
+                    android:id="@+id/edt_repassword"
+                    style="@style/Input.Register"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tên nhân vật" />
+
+                <EditText
+                    android:id="@+id/edt_character"
+                    style="@style/Input.Register"
+                    android:imeOptions="flagNoExtractUi" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Số CMND" />
+
+                <EditText
+                    android:id="@+id/edt_personal_id"
+                    style="@style/Input.Register"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Số điện thoại" />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    style="@style/Input.Register"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" >
+
+                <TextView
+                    style="@style/TextLabel.Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Giới tính" />
+
+                <RadioGroup
+                    android:id="@+id/rad_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rad_gender_male"
+                        style="@style/Checkbox"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/rad_gender_female"
+                        style="@style/Checkbox"
+                        android:layout_marginLeft="50dp"
+                        android:text="Nữ" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tv_caution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="*Lưu ý: Đăng ký tài khoản đầy đủ thông tin giúp bảo vệ tài khoản của bạn."
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/Button1.Small"
+            android:layout_above="@+id/tv_caution"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="5dp"
+            android:text="Đăng kí" />
+    </RelativeLayout>
+
+</RelativeLayout>

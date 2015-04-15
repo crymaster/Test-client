@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_vip_levels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#000000"
+        android:checkedButton="@+id/rb_vip_01"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_vip_01"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 1" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_02"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 2" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_03"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 3" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_04"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 4" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_05"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 5" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_06"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 6" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_07"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 7" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_08"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 8" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_09"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 9" />
+
+        <RadioButton
+            android:id="@+id/rb_vip_10"
+            style="@style/VIPLevelTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIP 10" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="114dp"
+            android:layout_height="199dp"
+            android:background="@drawable/vip_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_noidung" />
+
+            <TextView
+                android:id="@+id/tv_vip_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="3dp"
+                android:text="Nội dung"
+                android:textColor="#810503"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_vip_requirement"
+                android:textColor="#000000"
+                android:textSize="12sp" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_requirement"
+            android:layout_width="114dp"
+            android:layout_height="199dp"
+            android:background="@drawable/vip_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_dieukien" />
+
+            <TextView
+                android:id="@+id/tv_vip_requirement_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="3dp"
+                android:text="Điều kiện"
+                android:textColor="#810503"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_vip_requiremnent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_vip_content"
+                android:textColor="#000000"
+                android:textSize="12sp" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_reward"
+            android:layout_width="114dp"
+            android:layout_height="199dp"
+            android:background="@drawable/vip_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_quyenloi" />
+
+            <TextView
+                android:id="@+id/tv_vip_reward_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="3dp"
+                android:text="Quyền lợi đặc biệt"
+                android:textColor="#810503"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_vip_reward"
+                android:textColor="#000000"
+                android:textSize="12sp" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

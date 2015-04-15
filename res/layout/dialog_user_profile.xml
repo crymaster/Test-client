@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="@dimen/dialog_basic_width"
+        android:layout_height="@dimen/dialog_basic_height"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/popup_bg"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Thông tin người chơi"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <include
+            android:id="@+id/layout_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/txt_title"
+            android:layout_below="@+id/txt_title"
+            android:layout_marginTop="7dp"
+            layout="@layout/xeeng_ui_avatar" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            style="@style/TextLabel.ProfileName"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/layout_avatar"
+            android:text="Abcxyz" />
+
+        <ImageView
+            android:id="@+id/imv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txt_username"
+            android:layout_alignTop="@+id/txt_username"
+            android:layout_margin="3dp"
+            android:src="@drawable/icon_online" />
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <Button
+                android:id="@+id/btn_private_chat"
+                style="@style/Button1.Custom.AddFriend" />
+
+            <Button
+                android:id="@+id/btn_message"
+                style="@style/Button1.Custom.Message"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:id="@+id/btn_kick_or_invite"
+                style="@style/Button1.Custom.Invite"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_gold"
+            style="@style/TextLabel.Profile"
+            android:layout_alignLeft="@+id/txt_username"
+            android:layout_below="@+id/txt_username"
+            android:text="Gold:" />
+
+        <TextView
+            android:id="@+id/txt_gold"
+            style="@style/TextMoney.GoldCoin.Golden"
+            android:layout_alignTop="@+id/lbl_gold"
+            android:layout_toRightOf="@+id/lbl_gold"
+            android:text="123456"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lbl_gender"
+            style="@style/TextLabel.Profile"
+            android:layout_alignLeft="@+id/txt_username"
+            android:layout_below="@+id/lbl_gold"
+            android:text="Giới tính:" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            style="@style/TextLabel.Profile.Golden"
+            android:layout_alignTop="@+id/lbl_gender"
+            android:layout_toRightOf="@+id/lbl_gender"
+            android:text="Nam"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lbl_level"
+            style="@style/TextLabel.Profile"
+            android:layout_alignLeft="@+id/txt_username"
+            android:layout_below="@+id/lbl_gender"
+            android:text="Cấp bậc:" />
+
+        <TextView
+            android:id="@+id/txt_level"
+            style="@style/TextLabel.Profile.Golden"
+            android:layout_alignTop="@+id/lbl_level"
+            android:layout_toRightOf="@+id/lbl_level"
+            android:text="Đại gia" />
+		<TextView
+            android:id="@+id/lbl_viplevel"
+            style="@style/TextLabel.Profile"
+            android:layout_alignLeft="@+id/txt_username"
+            android:layout_below="@+id/lbl_level"
+            android:text="Đẳng cấp:" />
+
+        <TextView
+            android:id="@+id/txt_viplevel"
+            style="@style/TextLabel.Profile.Golden"
+            android:layout_alignTop="@+id/lbl_viplevel"
+            android:layout_toRightOf="@+id/lbl_viplevel"
+            android:text="N/A" />
+        <TextView
+            android:id="@+id/lbl_win"
+            style="@style/TextLabel.Profile"
+            android:layout_alignLeft="@+id/txt_username"
+            android:layout_below="@+id/lbl_level"
+            android:text="Thắng:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_win"
+            style="@style/TextLabel.Profile.Golden"
+            android:layout_alignTop="@+id/lbl_win"
+            android:layout_toRightOf="@+id/lbl_win"
+            android:text="96"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lbl_lose"
+            style="@style/TextLabel.Profile"
+            android:layout_below="@+id/lbl_level"
+            android:layout_toRightOf="@+id/txt_win"
+            android:text=" /  Thua:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_lose"
+            style="@style/TextLabel.Profile.Golden"
+            android:layout_alignTop="@+id/lbl_lose"
+            android:layout_toRightOf="@+id/lbl_lose"
+            android:text="69"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_close"
+        style="@style/ButtonIcon.Close"
+        android:layout_alignRight="@+id/layout_main" />
+
+</RelativeLayout>

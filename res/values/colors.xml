@@ -1,0 +1,28 @@
+<resources>
+
+    <color name="black_overlay">#99000000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="white_trans_0.7">#90ffffff</color>
+    <color name="hole_blue_dark">#ff0099cc</color>
+    <color name="dark_twenty_opac">#33000000</color> <!-- Dark color with 20% alpha -->
+    <color name="organe">#ffd020</color>
+    <color name="red">#d51401</color>
+    <color name="white_overlay">#CCFFFFFF</color>
+    <color name="pink">#ff979b</color>
+    <color name="green">#FDE25F</color>
+    <color name="table_seperator">#BC9C73</color>
+    <color name="friend_list_item_name">#FEFEC0</color>
+    <color name="info_webview_background">#24000A</color>
+    <color name="friend_list_item_background_normal">#96460509</color>
+    <color name="friend_list_item_background_selected">#280A0C</color>
+    <color name="color_info_button_bg">#40000000</color>
+    <color name="color_info_text_normal">#FEFEC0</color>
+    <array name="create_table_text_colors">
+        <item>#FFFF00</item> 
+        <item>#FF9E02</item>
+        <item>#FF4701</item>
+        <item>#FD0402</item>
+    </array>
+    <color name="dialog_send_message_edt_color">#300305</color>
+    <color name="event_details_history_border_color">#573941</color>
+</resources>

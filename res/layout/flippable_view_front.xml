@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.tv.xeeng.gui.customview.StrokedTextView
+        android:id="@+id/tv_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Front View"
+        android:textColor="#FFEF93"
+        android:textSize="@dimen/xeeng_ui_front_card_textSize"
+        app:strokedTextViewStrokeColor="#000000"
+        app:strokedTextViewStrokeWidth="2"
+        app:textStroke="true" />
+
+    <ImageView
+        android:id="@+id/imv_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/fv_front"
+        android:layout_alignLeft="@+id/fv_front"
+        android:layout_alignRight="@+id/fv_front"
+        android:layout_alignTop="@+id/fv_front"
+        android:src="@drawable/rounded_corner_overlay"
+        android:visibility="gone" />
+
+</RelativeLayout>

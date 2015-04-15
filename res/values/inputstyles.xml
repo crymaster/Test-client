@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Button1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#300405</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_ok_bg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button1.Smaller">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_chat_room_bg_select</item>
+    </style>
+
+    <style name="Button1.Small">
+        <item name="android:background">@drawable/btn_buynow_bg</item>
+    </style>
+
+    <style name="Button1.TableList">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_quick_play_bg</item>
+    </style>
+
+    <style name="Button1.Square">
+        <item name="android:background">@drawable/btn_napthe_bg</item>
+    </style>
+
+    <style name="Button1.Normal"></style>
+
+    <style name="Button1.Normal.Negative">
+        <item name="android:textColor">#383838</item>
+        <item name="android:background">@drawable/btn_cancel_bg</item>
+    </style>
+
+    <style name="Button1.Custom">
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="Button1.Custom.Charge" parent="Button1.Square">
+        <item name="android:text">Nạp thẻ</item>
+    </style>
+
+    <style name="Button1.Custom.PlayNow">
+        <item name="android:background">@drawable/btn_playnow</item>
+    </style>
+
+    <style name="Button1.Custom.AddFriend">
+        <item name="android:background">@drawable/btn_addfriend</item>
+    </style>
+
+    <style name="Button1.Custom.Invite">
+        <item name="android:background">@drawable/btn_invite_play</item>
+    </style>
+
+    <style name="Button1.Custom.Message">
+        <item name="android:background">@drawable/btn_send_mes</item>
+    </style>
+    <style name="Button1.Custom.DeleteFriend">
+        <item name="android:background">@drawable/btn_delfriend</item>
+    </style>
+
+    <style name="Button2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_change_profile_image</item>
+    </style>
+
+    <style name="Button2.Smaller">
+        <item name="android:textSize">10sp</item>
+        <item name="android:background">@drawable/selector_btn_chat_room_bg</item>
+    </style>
+
+    <style name="Button2.TableList">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_taoban_bg</item>
+    </style>
+
+    <style name="Button2.Square">
+        <item name="android:background">@drawable/btn_login_bg</item>
+    </style>
+
+    <style name="Button2.Normal">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button2.Normal.Negative">
+        <item name="android:textColor">#383838</item>
+        <item name="android:background">@drawable/btn_cancel_bg</item>
+    </style>
+
+    <style name="Button2.Custom"></style>
+
+    <style name="Button2.Custom.Login" parent="Button2.Square">
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">Đăng\nnhập</item>
+    </style>
+
+    <style name="Button2.Custom.Gift">
+        <item name="android:background">@drawable/btn_home_gift</item>
+        <item name="android:text">Quà\ntặng</item>
+        <item name="android:textSize">@dimen/xeeng_home_bottom_bar_buttons_btn_textSize</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/xeeng_home_bottom_bar_buttons_btn_paddingLeft</item>
+    </style>
+
+    <style name="Button2.Custom.XeengCoin" parent="Button2.Custom.Gift">
+        <item name="android:background">@drawable/btn_home_napxeng</item>
+        <item name="android:text">Nạp\nxèng</item>
+    </style>
+
+    <style name="Button2.Custom.Store" parent="Button2.Custom.Gift">
+        <item name="android:background">@drawable/btn_home_store</item>
+        <item name="android:text">Cửa\nhàng</item>
+    </style>
+
+    <style name="ButtonIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">0sp</item>
+        <item name="android:background">@drawable/btn_chat</item>
+    </style>
+
+    <style name="ButtonIcon.Chat">
+        <item name="android:background">@drawable/btn_chat</item>
+    </style>
+
+    <style name="ButtonIcon.Close">
+        <item name="android:background">@drawable/btn_close</item>
+    </style>
+
+    <style name="ButtonIcon.Delete">
+        <item name="android:background">@drawable/btn_del</item>
+    </style>
+
+    <style name="ButtonIcon.Emoticon">
+        <item name="android:background">@drawable/btn_emoticon</item>
+    </style>
+
+    <style name="ButtonSwitch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_switch_button_text_color</item>
+        <item name="android:background">@drawable/selector_btn_roomtype</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:button">@drawable/selector_checkbox</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Switch">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/selector_switch</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+        <item name="android:text">@null</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/textbox_login</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Input.Login">
+        <item name="android:layout_width">166dp</item>
+        <item name="android:background">@drawable/textbox_login</item>
+    </style>
+
+    <style name="Input.Register">
+        <item name="android:layout_width">181dp</item>
+        <item name="android:background">@drawable/player_info_cell_name</item>
+        <item name="android:textColor">#d0cfcb</item>
+    </style>
+
+</resources>

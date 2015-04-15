@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/xeeng_table_list_item_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_table_index"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="125"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/xeeng_list_item_textSize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@color/table_seperator" />
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="430"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/xeeng_list_item_textSize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@color/table_seperator" />
+
+    <TextView
+        android:id="@+id/tv_table_limit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="235"
+        android:gravity="center"
+        android:textColor="#ffff00"
+        android:textSize="@dimen/xeeng_list_item_textSize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@color/table_seperator" />
+
+    <TextView
+        android:id="@+id/tv_table_player_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="135"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/xeeng_list_item_textSize" />
+
+</LinearLayout>

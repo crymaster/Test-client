@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    tools:context=".ChargingActivity" >
+
+    <include
+        android:id="@+id/layout_topbar"
+        layout="@layout/xeeng_ui_topbar" >
+    </include>
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:id="@+id/lv_charging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottombar"
+        android:layout_below="@+id/layout_topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        tools:listitem="@layout/activity_charging_item" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xeeng_ui_bottombar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bottom_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <LinearLayout
+            android:layout_width="@dimen/xeeng_ui_bottombar_layout_profile_width"
+            android:layout_height="@dimen/xeeng_ui_bottombar_height"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical" >
+
+            <include
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                layout="@layout/xeeng_ui_avatar" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xeeng_ui_profile_texts_marginLeft"
+                android:layout_marginRight="@dimen/xeeng_ui_profile_texts_marginRight"
+                layout="@layout/xeeng_ui_profile_texts" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xeeng_ui_bottombar_height"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/notice_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog_player_info_game_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_overlay" >
+
+    <LinearLayout
+        android:id="@+id/rl_dialog_player_info_game_view_container"
+        android:layout_width="@dimen/dialog_player_info_width"
+        android:layout_height="@dimen/dialog_player_info_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_popup_bottom"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_login_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="THÔNG TIN NGƯỜI CHƠI"
+            android:textSize="@dimen/xeeng_common_header_textSize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_bored"
+            android:src="@drawable/line_userinfo1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imv_avatar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/description_bored"
+                    android:src="@drawable/icon_userinfo" />
+
+                <include
+                    android:id="@+id/layout_profile_texts"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="7"
+                    layout="@layout/xeeng_ui_dialog_player_info_texts" >
+                </include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_dialog_player_info_game_add_friend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.5"
+                    android:background="@drawable/btn_nap_tien"
+                    android:contentDescription="@string/description_bored"
+                    android:gravity="center"
+                    android:padding="@dimen/xeeng_btn_padding"
+                    android:text="@string/btn_label_addFriend"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/xeeng_btn_textSize" />
+
+                <View
+                    android:id="@+id/layout_social_buttons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="7" >
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_bored"
+            android:src="@drawable/line_userinfo1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_dialog_player_info_game_cash_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_game_button_selector"
+                android:padding="@dimen/xeeng_btn_padding"
+                android:text="Tặng xu"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/xeeng_btn_textSize" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xeeng_dialog_player_info_bottomtab_gap"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_dialog_player_info_game_kick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_in_profile_info"
+                android:layout_marginLeft="@dimen/xeeng_dialog_player_info_bottomtab_gap"
+                android:padding="@dimen/xeeng_btn_padding"
+                android:text="Kick"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/xeeng_btn_textSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

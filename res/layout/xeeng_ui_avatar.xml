@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#66ffffff"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/imv_profile_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:src="@drawable/avatar_default" />
+
+    <TextView
+        android:id="@+id/tv_profile_notification"
+        android:layout_width="@dimen/xeeng_profile_notification_size"
+        android:layout_height="@dimen/xeeng_profile_notification_size"
+        android:layout_alignRight="@+id/imv_profile_avatar"
+        android:layout_alignTop="@+id/imv_profile_avatar"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/notification_bg"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="@dimen/xeeng_profile_notification_textSize"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ImageView
+        android:id="@+id/img_light_grow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/login_light_grow" />
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background1_login"
+        android:paddingRight="@dimen/activity_login_layout_main_paddingRight"
+        android:paddingTop="14dp" >
+
+        <TextView
+            style="@style/TextLabel.Login"
+            android:layout_width="@dimen/activity_login_label_width"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edt_username"
+            android:layout_alignTop="@+id/edt_username"
+            android:layout_toLeftOf="@+id/edt_username"
+            android:text="@string/login_text_id" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            style="@style/Input.Login"
+            android:layout_alignTop="@+id/btn_login"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_login"
+            android:imeOptions="flagNoExtractUi" />
+
+        <TextView
+            style="@style/TextLabel.Login"
+            android:layout_width="@dimen/activity_login_label_width"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edt_password"
+            android:layout_alignTop="@+id/edt_password"
+            android:layout_toLeftOf="@+id/edt_password"
+            android:text="@string/login_text_password" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            style="@style/Input.Login"
+            android:layout_alignRight="@+id/edt_username"
+            android:layout_below="@+id/edt_username"
+            android:layout_marginTop="5dp"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Button2.Custom.Login"
+            android:layout_height="53dp"
+            android:layout_alignBottom="@+id/layout_edit_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_password"
+            android:layout_below="@+id/edt_password"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/transparent"
+            android:text="@string/login_text_registry"
+            android:textColor="@color/pink"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_login"
+            android:layout_alignTop="@+id/btn_register"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:text="@string/login_text_fogot_password"
+            android:textColor="@color/pink"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_play_now"
+            style="@style/Button1.Custom.PlayNow"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_register"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_glow2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/layout_main"
+        android:layout_alignTop="@+id/layout_main"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/glow2"
+        android:visibility="gone" />
+
+</RelativeLayout>

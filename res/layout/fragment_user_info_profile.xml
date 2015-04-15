@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/xeeng_fragment_user_info_profile_width"
+        android:layout_height="@dimen/xeeng_fragment_user_info_profile_height"
+        android:layout_centerInParent="true" >
+
+        <include
+            android:id="@+id/layout_avatar"
+            android:layout_width="@dimen/xeeng_fragment_user_info_profile_avatar_width"
+            android:layout_height="@dimen/xeeng_fragment_user_info_profile_avatar_height"
+            layout="@layout/xeeng_ui_avatar" />
+
+        <LinearLayout
+            android:layout_width="@dimen/xeeng_fragment_user_info_profile_texts_width"
+            android:layout_height="@dimen/xeeng_fragment_user_info_profile_texts_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                style="@style/TextLabel.ProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vickey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Xèng: "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_xeeng_value"
+                    style="@style/TextMoney.XeengCoin.Golden"
+                    android:text="4000"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Gold: "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_gold_value"
+                    style="@style/TextMoney.GoldCoin.Golden"
+                    android:text="14.800.800"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Giới tính: "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    style="@style/TextLabel.Golden"
+                    android:text="Nam" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Cấp bậc: "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    style="@style/TextLabel.Golden"
+                    android:text="N/A" />
+            </LinearLayout>
+			 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Đẳng cấp: "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_viplevel"
+                    style="@style/TextLabel.Golden"
+                    android:text="N/A" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Thắng: "
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_win"
+                    style="@style/TextLabel.Golden"
+                    android:text="69"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thua: "
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_lose"
+                    style="@style/TextLabel.Golden"
+                    android:text="96"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/change_profile_img_bg"
+            android:paddingLeft="@dimen/xeeng_fragment_user_info_profile_layout_change_avatar_horizontal_padding"
+            android:paddingRight="@dimen/xeeng_fragment_user_info_profile_layout_change_avatar_horizontal_padding" >
+
+            <TextView
+                android:id="@+id/tv_change_avatar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xeeng_fragment_user_info_profile_change_avatar_title_height"
+                android:gravity="center_vertical"
+                android:text="Thay đổi hình đại diện"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_choose_from_gallery"
+                style="@style/Button2.Normal"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_change_avatar_title"
+                android:text="Chọn từ máy" />
+
+            <Button
+                android:id="@+id/btn_take_photo"
+                style="@style/Button2.Normal"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_change_avatar_title"
+                android:text="Chụp hình" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

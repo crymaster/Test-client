@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tv.xeeng"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.tv.xeeng.gui.customview.InventoryItem
+        android:id="@+id/inventory_item"
+        style="@style/InventoryItem"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
